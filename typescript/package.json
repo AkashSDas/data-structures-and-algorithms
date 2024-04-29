@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "build": "tsc -w --preserveWatchOutput",
-        "dev": "node ./dist/top-k-frequent-elements/index.js",
+        "dev": "node ./dist/two-pointers/three-sum/index.js",
         "test": "jest -- src"
     },
     "keywords": [],
