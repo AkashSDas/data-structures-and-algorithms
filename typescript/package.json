@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "build": "tsc -w --preserveWatchOutput",
-        "dev": "node ./dist/two-pointers/trapping-rain-water/index.js",
+        "dev": "node ./dist/problems/binary-search/binary-search/index.js",
         "test": "jest -- src"
     },
     "keywords": [],
