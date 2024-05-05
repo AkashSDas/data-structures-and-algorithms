@@ -1,4 +1,22 @@
 function maxProfit(prices: number[]): number {
+    let left = 0; // bug
+    let right = 0; // sell
+    let profit = 0;
+
+    while (right < prices.length) {
+        if (prices[left] < prices[right]) {
+            profit = Math.max(profit, prices[right] - prices[left]);
+        } else {
+            left = right; // new minimum, min past price
+        }
+
+        right++;
+    }
+
+    return profit;
+}
+
+function maxProfit2(prices: number[]): number {
     let prevMin = prices[0];
     let profit = 0;
 
