@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "build": "tsc -w --preserveWatchOutput",
-        "dev": "node ./dist/problems/sliding-window/longest-substring-without-repeating-characters/index.js",
+        "dev": "node ./dist/problems/sliding-window/permutation-in-string/index.js",
         "test": "jest -- src"
     },
     "keywords": [],
