@@ -10,7 +10,7 @@ export function groupAnagrams(strs: string[]): string[][] {
         const counts = Array(26); // a..z
 
         for (let j = 0; j < str.length; j++) {
-            const ord = str.charCodeAt(j);
+            const ord = str.charCodeAt(j) - 97;
 
             if (counts[ord]) {
                 counts[ord] += 1;

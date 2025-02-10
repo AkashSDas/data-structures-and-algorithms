@@ -28,7 +28,7 @@ export function containsDuplicate(nums: number[]): boolean {
 export function containsDuplicate2(nums: number[]): boolean {
     for (let i = 0; i < nums.length; i++) {
         for (let j = 0; j < nums.length; j++) {
-            if (nums[i] == nums[j] && i !== j) {
+            if (nums[i] === nums[j] && i !== j) {
                 return true;
             }
         }
@@ -49,12 +49,14 @@ export function containsDuplicate3(nums: number[]): boolean {
     if (nums.length <= 1) return false;
 
     nums.sort();
-    const prev = 0;
+    let prev = 0;
 
     for (let i = 1; i < nums.length; i++) {
         if (nums[i] === nums[prev]) {
             return true;
         }
+
+        prev++;
     }
 
     return false;

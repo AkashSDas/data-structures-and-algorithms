@@ -9,20 +9,20 @@ export function topKFrequent(nums: number[], k: number): number[] {
         counts[nums[i]] = (counts[nums[i]] ?? 0) + 1;
     }
 
-    const occurance: string[][] = Array(nums.length);
+    const occurrence: string[][] = Array(nums.length);
     for (const key in counts) {
         const count = counts[key];
 
-        if (occurance[count] !== undefined) {
-            occurance[count].push(key);
+        if (occurrence[count] !== undefined) {
+            occurrence[count].push(key);
         } else {
-            occurance[count] = [key];
+            occurrence[count] = [key];
         }
     }
 
     const kNums: number[] = [];
-    for (let i = occurance.length - 1; i >= 0; i--) {
-        const numsAtI = occurance[i];
+    for (let i = occurrence.length - 1; i >= 0; i--) {
+        const numsAtI = occurrence[i];
 
         if (numsAtI !== undefined) {
             for (let j = 0; j < numsAtI.length; j++) {
