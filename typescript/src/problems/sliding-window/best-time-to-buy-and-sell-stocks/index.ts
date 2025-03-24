@@ -1,5 +1,5 @@
 function maxProfit(prices: number[]): number {
-    let left = 0; // bug
+    let left = 0; // buy
     let right = 0; // sell
     let profit = 0;
 
