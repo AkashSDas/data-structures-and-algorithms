@@ -3,30 +3,61 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# C extensions
-*.so
+# Poetry virtual environment
+.poetry/
 
-# Distribution / packaging
-dist/
-build/
-*.egg-info/
-*.egg
-
-# Virtual environments
+# Virtual environment
+.venv/
 venv/
 env/
-env.bak/
 
-# IDE specific files
-.idea/
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Install logs
+pip-log.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+*.cover
+.cache
+pytest_cache/
+junit.xml
+coverage.xml
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# VS Code
 .vscode/
 
-# Compiled Python files
-*.pyc
+# PyCharm
+.idea/
+*.iml
 
-# Logs
-*.log
-
-# OS generated files
+# MacOS
 .DS_Store
-Thumbs.db
+
+# Logs and databases
+*.log
+*.sqlite
+
+# Terraform
+.terraform/
+terraform.tfstate*
+.terraform.lock.hcl
+
+# Docker
+*.dockerfile
+docker-compose.override.yml
